@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Cache-Control"
+      content="no-cache, no-store, must-revalidate"
+    />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+
+    <!-- import D3 Version 6 here or at the end of the body -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/6.7.0/d3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/noframework.waypoints.js"></script>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <div style="margin-top: 200px;" id="div1">
+        <h2>Average MLB Player Salary</h2>
+        <p>
+          The average salary of a MLB player has increased a lot since the early 2000s. This is rather similar to other sports leagues
+          and makes sense with the increase in TV deals and other money making aspects of MLB and the teams. However the average player 
+          salary is not the best way to judge if players are making more or less. In 2021, the top 50 players were being paid 33.4% of 
+          the total player salaries and the top 100 players were receiving 52.4% of all the salaries. This means that the increase in the 
+          average salary doesn't really mean all players are getting paid more. This increases becauses of contracts like Mike Trout, 
+          Gerrit Cole, and Nolan Arenado who are all making over $35M a year. 
+        </p>
+      </div>
+      <div id="div2">
+        <h2>Median MLB Player Salary</h2>
+        <p>
+          I think that the median salary of a MLB players shows a more clear picture of what has been happening in the league more recently. 
+          The big contracts mentioned before like Mike Trout and Gerrit Cole really increase the average salary but there are still a lot of 
+          player who don't get paid anywhere near those amounts. The median salary has dropped nearly 30% since its record-high in 2015. In 2021, 
+          62% of players on opening day rosters had a salary of under $1M and 35% had a salary under $600,000. The last Collective Bargaining Agreement
+          (CBA) had the lowest minimum salary of the 4 major sports in the USA. In the recent lockout, the Players Association (MLBPA) wanted the CBA
+          to drastically improve this number. 
+        </p>
+      </div>
+      <div id="div3">
+        <h2>2013 Team Payroll vs. Team Revenue</h2>
+        <p>
+           
+        </p>
+      </div>
+      <div id="div4">
+        <h2>2022 Team Payroll vs. Team Revenue</h2>
+        <p>
+           
+        </p>
+      </div>
+      <div id="div5">
+        <h1>Credits</h1>
+        <p>Jacob Jablonski</p>
+      </div>
+    </div>
+    <div class="fixed">
+        <!-- create an SVG canvas for us to modify -->
+      <svg id="canvas" width="1000" height="700"></svg>
+    </div>
+
+    <div id="hover">
+
+    </div>
+
+    <!-- load our custom D3 code (must happen after D3 is loaded) -->
+    <script src="./scroll.js"></script>
+  </body>
+</html>
