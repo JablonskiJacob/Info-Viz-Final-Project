@@ -8,7 +8,8 @@ no longer be an issue. This projects visualizes some of these issues and tries t
 
 How to use?
 This project is run by GitHub pages and you can view it by heading to the html file hosted by GitHub. There is no installation required as it runs just like any 
-other website using html, js, and css. It uses the D3 JS library but this doesn't require any extra steps to use. 
+other website using html, js, and css. It uses the D3 JS library but this doesn't require any extra steps to use. You can view the project website being hosted at
+https://jablonskijacob.github.io/Info-Viz-Final-Project/
 
 Lessons learned?
 I think I learned a lot about various things will completing this class and project. To start off with, I learned a lot more about HTML and javascript. These two 
