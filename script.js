@@ -121,10 +121,20 @@ Promise.all([
     const resetVis = () => {
         chart.selectAll("*").remove()
     };
-  
-    // Average Salary grid
+
     let grid = () => {
         resetVis();
+
+        var img = document.getElementById("pic"); // display picture at top
+        img.setAttribute("class", "open");
+    };
+  
+    // Average Salary grid
+    let grid2 = () => {
+        resetVis();
+
+        var img = document.getElementById("pic"); // hide picture
+        img.setAttribute("class", "closed");
 
         //add axes
         chart.append('text') //x-axis
@@ -181,7 +191,7 @@ Promise.all([
     };
   
     //Median Salary grid
-    let grid2 = () => {
+    let grid3 = () => {
         resetVis();
 
         //add axes
@@ -239,7 +249,7 @@ Promise.all([
     };
 
     //2013 grid
-    let grid3 = () => {
+    let grid4 = () => {
         resetVis();
 
         //add axes
@@ -327,7 +337,7 @@ Promise.all([
     };
 
     //2018 grid
-    let grid4 = () => {
+    let grid5 = () => {
         resetVis();
 
         //add axes
@@ -415,7 +425,7 @@ Promise.all([
     };
     
     //2022 grid
-    let grid5 = () => {
+    let grid6 = () => {
         resetVis();
 
         //add axes
@@ -503,7 +513,7 @@ Promise.all([
     };
 
     // Average Payroll grid
-    let grid6 = () => {
+    let grid7 = () => {
         resetVis();
 
         //add axes
@@ -561,7 +571,7 @@ Promise.all([
     };
 
     // Average Revenue grid
-    let grid7 = () => {
+    let grid8 = () => {
         resetVis();
 
         //add axes
@@ -619,7 +629,7 @@ Promise.all([
     };
 
     // Percent grid
-    let grid8 = () => {
+    let grid9 = () => {
         resetVis();
 
         //add axes
@@ -676,7 +686,7 @@ Promise.all([
                 });
     };
 
-    let grid9 = () => {
+    let grid10 = () => {
         resetVis();
     };
   
@@ -701,6 +711,7 @@ Promise.all([
     new scroll("div7", "90%", grid7, grid6);
     new scroll("div8", "90%", grid8, grid7);
     new scroll("div9", "90%", grid9, grid8);
+    new scroll("div10", "90%", grid10, grid9);
   
     //start grid on page load
     grid();

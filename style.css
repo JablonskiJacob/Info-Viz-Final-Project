@@ -50,3 +50,17 @@ text {
   position: fixed;
   top: 750px;
 }
+
+img {
+  height: 700px;
+  width: 1000px;
+  position: fixed;
+}
+
+.open {
+  display: normal;
+}
+
+.closed {
+  display: none;
+}
